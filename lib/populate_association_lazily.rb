@@ -8,7 +8,7 @@
 #
 #   user = User.new(:wristband => { :color => 'orange' })
 #
-module PopulateAssociationFromHash
+module PopulateAssociationLazily
   def self.included base_class
     base_class.class_eval do
       def replace_with_populate_from_hash *args
