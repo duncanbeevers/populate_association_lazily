@@ -1,0 +1,658 @@
+# Logfile created on Tue Jun 10 16:15:53 -0700 2008 by /
+  [4;36;1mSQL (0.000954)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.000418)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.003364)[0m   [0;1mCREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar(255) DEFAULT NULL NULL) [0m
+  [4;35;1mSQL (0.000308)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.002679)[0m   [0;1mCREATE TABLE "wristbands" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "color" varchar(255) DEFAULT NULL NULL) [0m
+  [4;35;1mSQL (0.000736)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.003784)[0m   [0;1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [4;35;1mSQL (0.004912)[0m   [0mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [4;36;1mSQL (0.000710)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.000205)[0m   [0mSELECT version FROM "schema_migrations"[0m
+  [4;36;1mSQL (0.003565)[0m   [0;1mINSERT INTO "schema_migrations" (version) VALUES ('0')[0m
+  [4;36;1mSQL (0.000418)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.000906)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.003781)[0m   [0;1mDROP TABLE "users"[0m
+  [4;35;1mSQL (0.003066)[0m   [0mCREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar(255) DEFAULT NULL NULL) [0m
+  [4;36;1mSQL (0.000837)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.002695)[0m   [0mDROP TABLE "wristbands"[0m
+  [4;36;1mSQL (0.002661)[0m   [0;1mCREATE TABLE "wristbands" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "color" varchar(255) DEFAULT NULL NULL) [0m
+  [4;35;1mSQL (0.001064)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.000334)[0m   [0;1mSELECT version FROM "schema_migrations"[0m
+  [4;36;1mSQL (0.000421)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.000875)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.003444)[0m   [0;1mDROP TABLE "users"[0m
+  [4;35;1mSQL (0.002729)[0m   [0mCREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar(255) DEFAULT NULL NULL) [0m
+  [4;36;1mSQL (0.001067)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.003829)[0m   [0mDROP TABLE "wristbands"[0m
+  [4;36;1mSQL (0.003113)[0m   [0;1mCREATE TABLE "wristbands" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "color" varchar(255) DEFAULT NULL NULL) [0m
+  [4;35;1mSQL (0.000961)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.000470)[0m   [0;1mSELECT version FROM "schema_migrations"[0m
+  [4;36;1mSQL (0.000421)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.000814)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.004404)[0m   [0;1mDROP TABLE "users"[0m
+  [4;35;1mSQL (0.003559)[0m   [0mCREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar(255) DEFAULT NULL NULL) [0m
+  [4;36;1mSQL (0.001042)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.002750)[0m   [0mDROP TABLE "wristbands"[0m
+  [4;36;1mSQL (0.002944)[0m   [0;1mCREATE TABLE "wristbands" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "color" varchar(255) DEFAULT NULL NULL) [0m
+  [4;35;1mSQL (0.000946)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.000590)[0m   [0;1mSELECT version FROM "schema_migrations"[0m
+  [4;36;1mSQL (0.000414)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.000751)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.002505)[0m   [0;1mDROP TABLE "users"[0m
+  [4;35;1mSQL (0.002535)[0m   [0mCREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar(255) DEFAULT NULL NULL) [0m
+  [4;36;1mSQL (0.000930)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.003797)[0m   [0mDROP TABLE "wristbands"[0m
+  [4;36;1mSQL (0.002998)[0m   [0;1mCREATE TABLE "wristbands" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "color" varchar(255) DEFAULT NULL NULL) [0m
+  [4;35;1mSQL (0.000861)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.000332)[0m   [0;1mSELECT version FROM "schema_migrations"[0m
+  [4;36;1mSQL (0.000348)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.000707)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.002843)[0m   [0;1mDROP TABLE "users"[0m
+  [4;35;1mSQL (0.001520)[0m   [0mCREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar(255) DEFAULT NULL NULL) [0m
+  [4;36;1mSQL (0.000471)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.001787)[0m   [0mDROP TABLE "wristbands"[0m
+  [4;36;1mSQL (0.001990)[0m   [0;1mCREATE TABLE "wristbands" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "color" varchar(255) DEFAULT NULL NULL) [0m
+  [4;35;1mSQL (0.000568)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.000245)[0m   [0;1mSELECT version FROM "schema_migrations"[0m
+  [4;36;1mSQL (0.000380)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.000739)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.005122)[0m   [0;1mDROP TABLE "users"[0m
+  [4;35;1mSQL (0.004971)[0m   [0mCREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar(255) DEFAULT NULL NULL) [0m
+  [4;36;1mSQL (0.000926)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.002754)[0m   [0mDROP TABLE "wristbands"[0m
+  [4;36;1mSQL (0.003985)[0m   [0;1mCREATE TABLE "wristbands" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "color" varchar(255) DEFAULT NULL NULL) [0m
+  [4;35;1mSQL (0.000861)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.000379)[0m   [0;1mSELECT version FROM "schema_migrations"[0m
+  [4;36;1mSQL (0.000409)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.000838)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.002841)[0m   [0;1mDROP TABLE "users"[0m
+  [4;35;1mSQL (0.001924)[0m   [0mCREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar(255) DEFAULT NULL NULL) [0m
+  [4;36;1mSQL (0.000912)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.002131)[0m   [0mDROP TABLE "wristbands"[0m
+  [4;36;1mSQL (0.002853)[0m   [0;1mCREATE TABLE "wristbands" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "color" varchar(255) DEFAULT NULL NULL) [0m
+  [4;35;1mSQL (0.000483)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.000282)[0m   [0;1mSELECT version FROM "schema_migrations"[0m
+  [4;35;1mSQL (0.000745)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.000373)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.000773)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.002835)[0m   [0;1mDROP TABLE "users"[0m
+  [4;35;1mSQL (0.002560)[0m   [0mCREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar(255) DEFAULT NULL NULL) [0m
+  [4;36;1mSQL (0.000704)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.002646)[0m   [0mDROP TABLE "wristbands"[0m
+  [4;36;1mSQL (0.003909)[0m   [0;1mCREATE TABLE "wristbands" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "color" varchar(255) DEFAULT NULL NULL) [0m
+  [4;35;1mSQL (0.000906)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.000423)[0m   [0;1mSELECT version FROM "schema_migrations"[0m
+  [4;35;1mSQL (0.000487)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.000409)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.001067)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.003822)[0m   [0;1mDROP TABLE "users"[0m
+  [4;35;1mSQL (0.002946)[0m   [0mCREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar(255) DEFAULT NULL NULL) [0m
+  [4;36;1mSQL (0.000593)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.002241)[0m   [0mDROP TABLE "wristbands"[0m
+  [4;36;1mSQL (0.003038)[0m   [0;1mCREATE TABLE "wristbands" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "color" varchar(255) DEFAULT NULL NULL) [0m
+  [4;35;1mSQL (0.000766)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.000321)[0m   [0;1mSELECT version FROM "schema_migrations"[0m
+  [4;36;1mSQL (0.000348)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.000819)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.003065)[0m   [0;1mDROP TABLE "users"[0m
+  [4;35;1mSQL (0.002372)[0m   [0mCREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar(255) DEFAULT NULL NULL) [0m
+  [4;36;1mSQL (0.000711)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.001986)[0m   [0mDROP TABLE "wristbands"[0m
+  [4;36;1mSQL (0.003741)[0m   [0;1mCREATE TABLE "wristbands" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "color" varchar(255) DEFAULT NULL NULL) [0m
+  [4;35;1mSQL (0.000793)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.000247)[0m   [0;1mSELECT version FROM "schema_migrations"[0m
+  [4;36;1mSQL (0.000372)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.000717)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.002860)[0m   [0;1mDROP TABLE "users"[0m
+  [4;35;1mSQL (0.002312)[0m   [0mCREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "username" varchar(255) DEFAULT NULL NULL) [0m
+  [4;36;1mSQL (0.000851)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.004400)[0m   [0mDROP TABLE "wristbands"[0m
+  [4;36;1mSQL (0.003240)[0m   [0;1mCREATE TABLE "wristbands" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "color" varchar(255) DEFAULT NULL NULL) [0m
+  [4;35;1mSQL (0.000755)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.000355)[0m   [0;1mSELECT version FROM "schema_migrations"[0m
+  [4;35;1mSQL (0.000730)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.000390)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.000374)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.002092)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.003151)[0m   [0;1mDROP TABLE "users"[0m
+  [4;35;1mSQL (0.001892)[0m   [0mCREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "username" varchar(255) DEFAULT NULL NULL) [0m
+  [4;36;1mSQL (0.000460)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.001906)[0m   [0mDROP TABLE "wristbands"[0m
+  [4;36;1mSQL (0.004779)[0m   [0;1mCREATE TABLE "wristbands" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "color" varchar(255) DEFAULT NULL NULL) [0m
+  [4;35;1mSQL (0.000954)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.000433)[0m   [0;1mSELECT version FROM "schema_migrations"[0m
+  [4;36;1mSQL (0.000348)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.000742)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.003342)[0m   [0;1mDROP TABLE "users"[0m
+  [4;35;1mSQL (0.002053)[0m   [0mCREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "username" varchar(255) DEFAULT NULL NULL) [0m
+  [4;36;1mSQL (0.000452)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.001804)[0m   [0mDROP TABLE "wristbands"[0m
+  [4;36;1mSQL (0.004441)[0m   [0;1mCREATE TABLE "wristbands" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "color" varchar(255) DEFAULT NULL NULL) [0m
+  [4;35;1mSQL (0.000661)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.000340)[0m   [0;1mSELECT version FROM "schema_migrations"[0m
+  [4;36;1mSQL (0.000384)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.000699)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.002757)[0m   [0;1mDROP TABLE "users"[0m
+  [4;35;1mSQL (0.001775)[0m   [0mCREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "username" varchar(255) DEFAULT NULL NULL) [0m
+  [4;36;1mSQL (0.000445)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.001549)[0m   [0mDROP TABLE "wristbands"[0m
+  [4;36;1mSQL (0.004168)[0m   [0;1mCREATE TABLE "wristbands" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "color" varchar(255) DEFAULT NULL NULL) [0m
+  [4;35;1mSQL (0.000774)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.000498)[0m   [0;1mSELECT version FROM "schema_migrations"[0m
+  [4;35;1mSQL (0.000528)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.000340)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.000752)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.004939)[0m   [0;1mDROP TABLE "users"[0m
+  [4;35;1mSQL (0.010412)[0m   [0mCREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "username" varchar(255) DEFAULT NULL NULL) [0m
+  [4;36;1mSQL (0.000553)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.002119)[0m   [0mDROP TABLE "wristbands"[0m
+  [4;36;1mSQL (0.002646)[0m   [0;1mCREATE TABLE "wristbands" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "color" varchar(255) DEFAULT NULL NULL) [0m
+  [4;35;1mSQL (0.000826)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.000322)[0m   [0;1mSELECT version FROM "schema_migrations"[0m
+  [4;35;1mSQL (0.000475)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.000340)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.000737)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.003799)[0m   [0;1mDROP TABLE "users"[0m
+  [4;35;1mSQL (0.002798)[0m   [0mCREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "username" varchar(255) DEFAULT NULL NULL) [0m
+  [4;36;1mSQL (0.000661)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.003485)[0m   [0mDROP TABLE "wristbands"[0m
+  [4;36;1mSQL (0.002400)[0m   [0;1mCREATE TABLE "wristbands" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "color" varchar(255) DEFAULT NULL NULL) [0m
+  [4;35;1mSQL (0.000738)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.000355)[0m   [0;1mSELECT version FROM "schema_migrations"[0m
+  [4;35;1mSQL (0.000519)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.000348)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.000694)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.003612)[0m   [0;1mDROP TABLE "users"[0m
+  [4;35;1mSQL (0.002771)[0m   [0mCREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "username" varchar(255) DEFAULT NULL NULL) [0m
+  [4;36;1mSQL (0.000685)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.002846)[0m   [0mDROP TABLE "wristbands"[0m
+  [4;36;1mSQL (0.002709)[0m   [0;1mCREATE TABLE "wristbands" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "color" varchar(255) DEFAULT NULL NULL) [0m
+  [4;35;1mSQL (0.000771)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.000331)[0m   [0;1mSELECT version FROM "schema_migrations"[0m
+  [4;35;1mSQL (0.000553)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.000406)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.000896)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.002713)[0m   [0;1mDROP TABLE "users"[0m
+  [4;35;1mSQL (0.002186)[0m   [0mCREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "username" varchar(255) DEFAULT NULL NULL) [0m
+  [4;36;1mSQL (0.000605)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.001760)[0m   [0mDROP TABLE "wristbands"[0m
+  [4;36;1mSQL (0.006038)[0m   [0;1mCREATE TABLE "wristbands" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "color" varchar(255) DEFAULT NULL NULL) [0m
+  [4;35;1mSQL (0.000631)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.000326)[0m   [0;1mSELECT version FROM "schema_migrations"[0m
+  [4;35;1mSQL (0.000505)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.000353)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.000705)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.003263)[0m   [0;1mDROP TABLE "users"[0m
+  [4;35;1mSQL (0.002731)[0m   [0mCREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "username" varchar(255) DEFAULT NULL NULL) [0m
+  [4;36;1mSQL (0.000685)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.002587)[0m   [0mDROP TABLE "wristbands"[0m
+  [4;36;1mSQL (0.005432)[0m   [0;1mCREATE TABLE "wristbands" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "color" varchar(255) DEFAULT NULL NULL) [0m
+  [4;35;1mSQL (0.000668)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.000657)[0m   [0;1mSELECT version FROM "schema_migrations"[0m
+  [4;35;1mSQL (0.000485)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.000352)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.000712)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.002113)[0m   [0;1mDROP TABLE "users"[0m
+  [4;35;1mSQL (0.001899)[0m   [0mCREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "username" varchar(255) DEFAULT NULL NULL) [0m
+  [4;36;1mSQL (0.000686)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.001576)[0m   [0mDROP TABLE "wristbands"[0m
+  [4;36;1mSQL (0.005860)[0m   [0;1mCREATE TABLE "wristbands" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "color" varchar(255) DEFAULT NULL NULL) [0m
+  [4;35;1mSQL (0.000646)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.000352)[0m   [0;1mSELECT version FROM "schema_migrations"[0m
+  [4;35;1mSQL (0.000586)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.000339)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.003138)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.018288)[0m   [0;1mDROP TABLE "users"[0m
+  [4;35;1mSQL (0.002771)[0m   [0mCREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "username" varchar(255) DEFAULT NULL NULL) [0m
+  [4;36;1mSQL (0.000645)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.002389)[0m   [0mDROP TABLE "wristbands"[0m
+  [4;36;1mSQL (0.002674)[0m   [0;1mCREATE TABLE "wristbands" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "color" varchar(255) DEFAULT NULL NULL) [0m
+  [4;35;1mSQL (0.000705)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.000343)[0m   [0;1mSELECT version FROM "schema_migrations"[0m
+  [4;35;1mSQL (0.000474)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.000375)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.000719)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.002705)[0m   [0;1mDROP TABLE "users"[0m
+  [4;35;1mSQL (0.002031)[0m   [0mCREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "username" varchar(255) DEFAULT NULL NULL) [0m
+  [4;36;1mSQL (0.000691)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.001669)[0m   [0mDROP TABLE "wristbands"[0m
+  [4;36;1mSQL (0.005347)[0m   [0;1mCREATE TABLE "wristbands" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "color" varchar(255) DEFAULT NULL NULL) [0m
+  [4;35;1mSQL (0.000588)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.000387)[0m   [0;1mSELECT version FROM "schema_migrations"[0m
+  [4;35;1mSQL (0.000491)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.000437)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.000710)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.003184)[0m   [0;1mDROP TABLE "users"[0m
+  [4;35;1mSQL (0.002827)[0m   [0mCREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "username" varchar(255) DEFAULT NULL NULL) [0m
+  [4;36;1mSQL (0.000796)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.002633)[0m   [0mDROP TABLE "wristbands"[0m
+  [4;36;1mSQL (0.002734)[0m   [0;1mCREATE TABLE "wristbands" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "color" varchar(255) DEFAULT NULL NULL) [0m
+  [4;35;1mSQL (0.000709)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.000462)[0m   [0;1mSELECT version FROM "schema_migrations"[0m
+  [4;35;1mSQL (0.000511)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.000341)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.000745)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.002623)[0m   [0;1mDROP TABLE "users"[0m
+  [4;35;1mSQL (0.003276)[0m   [0mCREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "username" varchar(255) DEFAULT NULL NULL) [0m
+  [4;36;1mSQL (0.000793)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.002652)[0m   [0mDROP TABLE "wristbands"[0m
+  [4;36;1mSQL (0.003002)[0m   [0;1mCREATE TABLE "wristbands" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "color" varchar(255) DEFAULT NULL NULL) [0m
+  [4;35;1mSQL (0.000585)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.000367)[0m   [0;1mSELECT version FROM "schema_migrations"[0m
+  [4;35;1mSQL (0.000481)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.000387)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.000711)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.002580)[0m   [0;1mDROP TABLE "users"[0m
+  [4;35;1mSQL (0.001785)[0m   [0mCREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "username" varchar(255) DEFAULT NULL NULL) [0m
+  [4;36;1mSQL (0.000571)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.001774)[0m   [0mDROP TABLE "wristbands"[0m
+  [4;36;1mSQL (0.006429)[0m   [0;1mCREATE TABLE "wristbands" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "color" varchar(255) DEFAULT NULL NULL) [0m
+  [4;35;1mSQL (0.000805)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.000341)[0m   [0;1mSELECT version FROM "schema_migrations"[0m
+  [4;35;1mSQL (0.000428)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.000729)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.000408)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.000723)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.004254)[0m   [0;1mDROP TABLE "users"[0m
+  [4;35;1mSQL (0.002890)[0m   [0mCREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "username" varchar(255) DEFAULT NULL NULL) [0m
+  [4;36;1mSQL (0.000602)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.003631)[0m   [0mDROP TABLE "wristbands"[0m
+  [4;36;1mSQL (0.002387)[0m   [0;1mCREATE TABLE "wristbands" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "color" varchar(255) DEFAULT NULL NULL) [0m
+  [4;35;1mSQL (0.000626)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.000538)[0m   [0;1mSELECT version FROM "schema_migrations"[0m
+  [4;35;1mSQL (0.000428)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.000528)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.000427)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.000729)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.004587)[0m   [0;1mDROP TABLE "users"[0m
+  [4;35;1mSQL (0.002717)[0m   [0mCREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "username" varchar(255) DEFAULT NULL NULL) [0m
+  [4;36;1mSQL (0.000664)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.003046)[0m   [0mDROP TABLE "wristbands"[0m
+  [4;36;1mSQL (0.002171)[0m   [0;1mCREATE TABLE "wristbands" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "color" varchar(255) DEFAULT NULL NULL) [0m
+  [4;35;1mSQL (0.000746)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.000365)[0m   [0;1mSELECT version FROM "schema_migrations"[0m
+  [4;36;1mSQL (0.000364)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.000746)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.002438)[0m   [0;1mDROP TABLE "users"[0m
+  [4;35;1mSQL (0.001954)[0m   [0mCREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "username" varchar(255) DEFAULT NULL NULL) [0m
+  [4;36;1mSQL (0.000678)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.001753)[0m   [0mDROP TABLE "wristbands"[0m
+  [4;36;1mSQL (0.005214)[0m   [0;1mCREATE TABLE "wristbands" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "color" varchar(255) DEFAULT NULL NULL) [0m
+  [4;35;1mSQL (0.000712)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.000394)[0m   [0;1mSELECT version FROM "schema_migrations"[0m
+  [4;36;1mSQL (0.000353)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.000708)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.004924)[0m   [0;1mDROP TABLE "users"[0m
+  [4;35;1mSQL (0.002571)[0m   [0mCREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "username" varchar(255) DEFAULT NULL NULL) [0m
+  [4;36;1mSQL (0.000731)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.004076)[0m   [0mDROP TABLE "wristbands"[0m
+  [4;36;1mSQL (0.002703)[0m   [0;1mCREATE TABLE "wristbands" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "color" varchar(255) DEFAULT NULL NULL) [0m
+  [4;35;1mSQL (0.000792)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.000431)[0m   [0;1mSELECT version FROM "schema_migrations"[0m
+  [4;36;1mSQL (0.000355)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.000795)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.004147)[0m   [0;1mDROP TABLE "users"[0m
+  [4;35;1mSQL (0.002985)[0m   [0mCREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "username" varchar(255) DEFAULT NULL NULL) [0m
+  [4;36;1mSQL (0.000784)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.004636)[0m   [0mDROP TABLE "wristbands"[0m
+  [4;36;1mSQL (0.002630)[0m   [0;1mCREATE TABLE "wristbands" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "color" varchar(255) DEFAULT NULL NULL) [0m
+  [4;35;1mSQL (0.001006)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.000365)[0m   [0;1mSELECT version FROM "schema_migrations"[0m
+  [4;36;1mSQL (0.000422)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.000764)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.003344)[0m   [0;1mDROP TABLE "users"[0m
+  [4;35;1mSQL (0.002677)[0m   [0mCREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "username" varchar(255) DEFAULT NULL NULL) [0m
+  [4;36;1mSQL (0.000752)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.002485)[0m   [0mDROP TABLE "wristbands"[0m
+  [4;36;1mSQL (0.002356)[0m   [0;1mCREATE TABLE "wristbands" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "color" varchar(255) DEFAULT NULL NULL) [0m
+  [4;35;1mSQL (0.000690)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.000325)[0m   [0;1mSELECT version FROM "schema_migrations"[0m

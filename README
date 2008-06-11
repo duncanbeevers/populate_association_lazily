@@ -1,0 +1,10 @@
+Allows creation of objects through associations by assigning hash to association
+
+  class User < ActiveRecord::Base
+    has_one :wristband
+  end
+  class Wristband < ActiveRecord::Base
+  end
+
+  user = User.new(:wristband => { :color => 'orange' })
+
