@@ -40,8 +40,12 @@ module PopulateAssociationLazily
   module PopulateBelongsToPolymorphicAssociationLazily
     def self.included base_class
       base_class.class_eval do
-        def replace_with_populate_from_hash record
-          replace_without_populate_from_hash record
+        def replace_with_populate_from_hash attributes
+          if attributes.kind_of?(Hash)
+            raise ArgumentError, 'You must specify a valid class name as the type of the record to be created' unless attributes[:type]
+            klass = attributes[:type].constantize
+          end
+          replace_without_populate_from_hash attributes
         end
         alias_method_chain :replace, :populate_from_hash
       end

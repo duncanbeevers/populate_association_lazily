@@ -52,6 +52,22 @@ class PopulatesAssociationLazilyTest < Test::Unit::TestCase
     assert_equal 'maroon', User.new(:favorite_wristbands => [ { :color => 'maroon' } ] ).favorite_wristbands.first.color
   end
 
+  def test_should_raise_on_populate_through_polymorphic_belongs_to_when_type_is_not_specified
+    assert_raise ArgumentError do
+      Wristband.new(:something => { })
+    end
+  end
+
+  def test_should_raise_on_populate_through_polymorphic_belongs_to_when_bad_type_is_specified
+    assert_raise NameError, 'No class NoSuchClass should exist' do
+      NoSuchClass
+    end
+    assert_raise NameError do
+      Wristband.new(:something => { :type => 'NoSuchClass' } )
+    end
+  end
+
+
   def test_should_populate_via_has_through_polymorphic_belongs_to_association
     assert_kind_of User, Wristband.new(:something => { :type => 'User' } ), 'Should populate polymorphic belongs_to with type declaration'
     assert_kind_of Favorite, Wristband.new(:something => { :type => 'Favorite' } ), 'Should populate polymorphic belongs_to with type declaration'
