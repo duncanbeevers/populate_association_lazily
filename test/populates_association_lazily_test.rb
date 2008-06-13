@@ -1,6 +1,6 @@
 require File.join(File.dirname(__FILE__), 'test_helper')
 
-class PopulatesAssociationFromHashTest < Test::Unit::TestCase
+class PopulatesAssociationLazilyTest < Test::Unit::TestCase
   def test_should_populate_via_hash_through_has_one_association
     assert_equal :has_one, User.reflections[:wristband].macro, 'User should have has_one association to Wristband'
     assert_kind_of Wristband, User.new(:wristband => { :color => 'orange' } ).wristband
@@ -17,7 +17,7 @@ class PopulatesAssociationFromHashTest < Test::Unit::TestCase
     assert user.errors.on(:wristband), 'Should have errors on association'
   end
 
-  def test_should_populate_errors_on_association
+  def test_should_populate_errors_on_associationr
     user = User.new(:wristband => { })
     user.valid?
     assert user.wristband.errors.on(:color), 'Should have errors on underlying object'
