@@ -5,6 +5,10 @@ class PopulatesAssociationLazilyTest < Test::Unit::TestCase
     assert_equal :has_one, User.reflections[:wristband].macro, 'User should have has_one association to Wristband'
   end
 
+  def test_user_should_have_has_many_reflection_to_favorites
+    assert_equal :has_many, User.reflections[:favorites].macro, 'User should have has_many assocation to Favorites'
+  end
+
   def test_should_populate_via_hash_through_has_one_association
     assert_kind_of Wristband, User.new(:wristband => { } ).wristband, 'Association assigned via hash should populate object of association type'
   end

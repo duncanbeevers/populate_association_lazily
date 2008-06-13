@@ -7,8 +7,8 @@ ActiveRecord::Schema.define(:version => 0) do
     t.string :color
   end
 
-  create_table :admirations, :force => true do |t|
-    t.integer :admirer_id
-    t.integer :hero_id
+  create_table :favorites, :force => true do |t|
+    t.integer :user_id
+    t.integer :wristband_id
   end
 end
