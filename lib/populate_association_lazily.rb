@@ -38,6 +38,14 @@ module PopulateAssociationLazily
   end
 
   module PopulateBelongsToPolymorphicAssociationLazily
+    def self.included base_class
+      base_class.class_eval do
+        def replace_with_populate_from_hash record
+          replace_without_populate_from_hash record
+        end
+        alias_method_chain :replace, :populate_from_hash
+      end
+    end
   end
 
 end
