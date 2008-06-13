@@ -44,8 +44,11 @@ module PopulateAssociationLazily
           if attributes.kind_of?(Hash)
             raise ArgumentError, 'You must specify a valid class name as the type of the record to be created' unless attributes[:type]
             klass = attributes[:type].constantize
+            record = klass.new(attributes)
+          else
+            record = attributes
           end
-          replace_without_populate_from_hash attributes
+          replace_without_populate_from_hash record
         end
         alias_method_chain :replace, :populate_from_hash
       end

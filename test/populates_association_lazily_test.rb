@@ -67,10 +67,11 @@ class PopulatesAssociationLazilyTest < Test::Unit::TestCase
     end
   end
 
-
   def test_should_populate_via_has_through_polymorphic_belongs_to_association
-    assert_kind_of User, Wristband.new(:something => { :type => 'User' } ), 'Should populate polymorphic belongs_to with type declaration'
-    assert_kind_of Favorite, Wristband.new(:something => { :type => 'Favorite' } ), 'Should populate polymorphic belongs_to with type declaration'
+    assert_kind_of User, Wristband.new(:something => { :type => 'User' } ).something,
+      'Should populate polymorphic belongs_to with type declaration'
+    assert_kind_of Favorite, Wristband.new(:something => { :type => 'Favorite' } ).something,
+      'Should populate polymorphic belongs_to with type declaration'
   end
 
   def test_should_populate_errors_on_association
