@@ -2,9 +2,19 @@ Allows creation of objects through associations by assigning hash to association
 
   class User < ActiveRecord::Base
     has_one :wristband
+    has_many :favorites
+    has_many :favorite_wristbands, :through => :favorites, :source => :wristband
   end
+
   class Wristband < ActiveRecord::Base
+    belongs_to :user
+  end
+
+  class Favorite < ActiveRecord::Base
+    belongs_to :user
+    belongs_to :wristband
   end
 
   user = User.new(:wristband => { :color => 'orange' })
 
+  user = User.new(:favorite_wristbands => [ { :color => 'pink' } ] )

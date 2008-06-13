@@ -9,6 +9,10 @@ class PopulatesAssociationLazilyTest < Test::Unit::TestCase
     assert_equal :has_many, User.reflections[:favorites].macro, 'User should have has_many assocation to Favorites'
   end
 
+  def test_user_should_have_has_many_through_reflection_to_favorite_wristbands
+    assert_equal :has_many, User.reflections[:favorite_wristbands].macro, 'User should have has_many through assocation to favorite Wristbands'
+  end
+
   def test_wristband_should_have_belongs_to_reflection_to_users
     assert_equal :belongs_to, Wristband.reflections[:user].macro, 'Wristband should have belongs_to association to User'
   end
@@ -35,6 +39,10 @@ class PopulatesAssociationLazilyTest < Test::Unit::TestCase
 
   def test_should_populate_properites_via_array_through_has_many_association_with_nested_hashes
     assert_equal 1, User.new(:favorites => [ { :wristband_id => 1 } ] ).favorites.first.wristband_id
+  end
+
+  def test_should_populate_via_array_through_has_many_through_association
+    assert_equal 'maroon', User.new(:favorite_wristbands => [ { :color => 'maroon' } ] ).favorite_wristbands.first.color
   end
 
   def test_should_populate_errors_on_association

@@ -3,6 +3,7 @@ class User < ActiveRecord::Base
   validates_presence_of :wristband
 
   has_many :favorites
+  has_many :favorite_wristbands, :through => :favorites, :source => :wristband
 end
 
 class Wristband < ActiveRecord::Base
