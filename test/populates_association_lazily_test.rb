@@ -17,6 +17,13 @@ class PopulatesAssociationLazilyTest < Test::Unit::TestCase
     assert_equal :belongs_to, Wristband.reflections[:user].macro, 'Wristband should have belongs_to association to User'
   end
 
+  def test_wristband_should_have_polymorphic_belongs_to_something
+    reflection = Wristband.reflections[:something]
+    # Really!??!
+    assert_equal :belongs_to, reflection.macro, 'Wristband should have polymorphic belongs_to assocation to something'
+    assert reflection.options[:polymorphic],'Wristband should have polymorphic belongs_to assocation to something'
+  end
+
   def test_should_populate_via_hash_through_has_one_association
     assert_kind_of Wristband, User.new(:wristband => { } ).wristband, 'Association assigned via hash should populate object of association type'
   end
