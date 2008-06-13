@@ -9,6 +9,8 @@ end
 class Wristband < ActiveRecord::Base
   belongs_to :user
   validates_presence_of :color
+
+  belongs_to :something, :polymorphic => true
 end
 
 class Favorite < ActiveRecord::Base
