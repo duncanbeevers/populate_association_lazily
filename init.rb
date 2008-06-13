@@ -6,7 +6,7 @@ require 'populate_association_lazily'
   klass.send(:include, PopulateAssociationLazily::PopulateSingleAssocationLazily)
 end
 
-[ ActiveRecord::Associations::HasManyAssociation
+[ ActiveRecord::Associations::AssociationCollection
 ].each do |klass|
   klass.send(:include, PopulateAssociationLazily::PopulateMultipleAssociationLazily)
 end

@@ -24,6 +24,17 @@ module PopulateAssociationLazily
   end
 
   module PopulateMultipleAssociationLazily
+    def self.included base_class
+      base_class.class_eval do
+        def replace_with_populate_from_hash other_array
+          new_array = other_array.map do |attributes|
+            attributes.kind_of?(Hash) ? @reflection.klass.new(attributes) : attributes
+          end
+          replace_without_populate_from_hash new_array
+        end
+        alias_method_chain :replace, :populate_from_hash
+      end
+    end
   end
 
 end
