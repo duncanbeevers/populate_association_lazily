@@ -25,6 +25,10 @@ class PopulatesAssociationLazilyTest < Test::Unit::TestCase
     assert_kind_of User, Wristband.new(:user => { :username => 'andre' } ).user
   end
 
+  def test_should_populate_via_array_through_has_many_association
+    assert_equal 1, User.new(:favorites => [ Favorite.new ] ).favorites.size, 'Should have populated a favorite on favorites association'
+  end
+
   def test_should_populate_errors_on_association
     user = User.new(:wristband => { })
     user.valid?
