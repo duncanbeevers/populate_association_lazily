@@ -37,4 +37,7 @@ module PopulateAssociationLazily
     end
   end
 
+  module PopulateBelongsToPolymorphicAssociationLazily
+  end
+
 end

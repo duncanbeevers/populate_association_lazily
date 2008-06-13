@@ -8,3 +8,6 @@ end
 
 ActiveRecord::Associations::AssociationCollection.send :include,
   PopulateAssociationLazily::PopulateMultipleAssociationLazily
+
+ActiveRecord::Associations::BelongsToPolymorphicAssociation.send :include,
+  PopulateAssociationLazily::PopulateBelongsToPolymorphicAssociationLazily
