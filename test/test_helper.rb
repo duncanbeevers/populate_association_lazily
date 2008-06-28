@@ -5,6 +5,7 @@ require 'rubygems'
 require 'active_support'
 require 'active_record'
 require 'active_record/fixtures'
+require 'action_controller'
 
 require 'test/models'
 
