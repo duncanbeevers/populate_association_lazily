@@ -36,6 +36,19 @@ class PopulatesAssociationLazilyTest < Test::Unit::TestCase
     assert_kind_of User, Wristband.new(:user => { :username => 'andre' } ).user
   end
 
+  def test_should_update_existing_object_if_association_is_populated
+    user = User.create(:wristband => { :color => 'orange' } )
+    original_wristband = user.wristband
+    user.update_attributes(:wristband => { } )
+    assert_equal original_wristband.id, user.wristband.id, 'Association updated with existing object updated with hash should update original object'
+  end
+
+  def test_should_update_attributes_of_existing_object_if_association_is_populated
+    user = User.new(:wristband => { :color => 'orange' } )
+    user.update_attributes(:wristband => { :color => 'blue' } )
+    assert_equal 'blue', user.wristband.color, 'Association updated with existing object updated with hash should update original object\'s attributes'
+  end
+
   def test_should_populate_via_array_through_has_many_association
     assert_equal 1, User.new(:favorites => [ Favorite.new ] ).favorites.size, 'Should have populated a favorite on favorites association'
   end
