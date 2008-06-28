@@ -6,6 +6,7 @@ ActiveRecord::Schema.define(:version => 0) do
   create_table :wristbands, :force => true do |t|
     t.string :color
 
+    t.integer :user_id
     t.integer :something_id
     t.string :something_type
   end
