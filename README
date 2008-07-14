@@ -1,3 +1,7 @@
+Deprecated
+This behavior is available in rails core as of commit e0750d6a5c7f621e4ca12205137c0b135cab444a
+http://github.com/rails/rails/commit/e0750d6a5c7f621e4ca12205137c0b135cab444a
+
 Allows creation of objects through associations by assigning hash to association
 
   class User < ActiveRecord::Base
